@@ -25,6 +25,8 @@ public class Hand {
 		
 		for (Card c: cards)
 		{
+			
+			
 			//	TODO: Determine the score.  
 			//			Cards:
 			//			2-3-4 - score = 11
@@ -40,7 +42,8 @@ public class Hand {
 	
 	public void Draw(Deck d)
 	{
-		//	TODO: add a card to 'cards' from a card drawn from Deck d
+		cards.add(d.Draw());
+		
 	}
 	
 	private void AddCard(Card c)
