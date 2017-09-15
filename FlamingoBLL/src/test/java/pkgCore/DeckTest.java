@@ -13,10 +13,11 @@ public class DeckTest {
 		int test1 = d.cardsInDeck.size();
 		Deck dos = new Deck(6);
 		int test2 = dos.cardsInDeck.size();
-		assertEquals(test1, 52);
-		System.out.println(test1);
+		
+		assertEquals(test1, 104);
+		
 		assertEquals(test2, 312);
-		System.out.println(test2);
+		
 		
 		
 		//	TODO: Build a deck(1), make sure there are 52 cards in the deck

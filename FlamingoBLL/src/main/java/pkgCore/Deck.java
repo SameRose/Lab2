@@ -7,20 +7,26 @@ public class Deck {
 
 	public ArrayList<Card> cardsInDeck;
 	
-
+	
 	public Deck(int decksNumber) {
-		int n = 0;
-		do {
+		cardsInDeck = new ArrayList<Card>();
+		for(int x = 0; x<decksNumber; x++) {
 			for (eSuit eSuit : eSuit.values()) {
 
 				for (eRank eRank : eRank.values()) {
-
-					cardsInDeck.add(new Card(eSuit, eRank));
-					n++;
+					
+					if(eRank != eRank.ONE) {
+						
+						Card c = new Card(eSuit, eRank);
+						cardsInDeck.add(c);}
+					
 				}
+				
 			}
+			
+		}
 
-		} while (n < decksNumber);
+		
 		
 	}
 
