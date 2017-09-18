@@ -64,10 +64,8 @@ public class HandTest {
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -132,9 +130,9 @@ ArrayList<Card> cards = new ArrayList<Card>();
 		
 		int[] score = HandHelper(cards);
 		
-		
+		assertEquals(score[0],11);
 		assertEquals(score[1],21);	
-		// TODO: Test J-A, score should be 21
+		
 	}
 
 	@Test
@@ -147,9 +145,9 @@ ArrayList<Card> cards = new ArrayList<Card>();
 		
 		int[] score = HandHelper(cards);
 		
-		
+		assertEquals(score[1],22);
 		assertEquals(score[0],12);	
-		// TODO: Test J-A-A, score should be 12
+		
 	}
 
 	@Test
@@ -164,9 +162,9 @@ ArrayList<Card> cards = new ArrayList<Card>();
 		
 		int[] score = HandHelper(cards);
 		
-		
+		assertEquals(score[1],23);
 		assertEquals(score[0],13);	
-		// TODO: Test J-A-A-A, score should be 13
+		
 	}
 	
 	@Test
@@ -186,7 +184,7 @@ ArrayList<Card> cards = new ArrayList<Card>();
 		assertEquals(score[1],16);	
 		
 		
-		//	TODO: Test A-A-A-A-2, score should be 6 or 16
+		
 	}
 
 }

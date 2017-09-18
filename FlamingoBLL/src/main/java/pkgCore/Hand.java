@@ -8,11 +8,11 @@ import pkgEnum.eRank;
 public class Hand {
 
 	private int iScore;
-	private ArrayList<Card> cards = new ArrayList<Card>();
+	private ArrayList<Card> cards;
 	
 	public Hand()
 	{
-		ArrayList<Card> cards = new ArrayList<Card>();
+		cards = new ArrayList<Card>();
 		
 	}
 	

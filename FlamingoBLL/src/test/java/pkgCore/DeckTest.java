@@ -20,8 +20,7 @@ public class DeckTest {
 		
 		
 		
-		//	TODO: Build a deck(1), make sure there are 52 cards in the deck
-		//	TODO: Build a deck(6), make sure there are 312 cards in the deck 
+		
 	}
 
 }
